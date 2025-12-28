@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style-it</title>
+     <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+    <ul class="nav-left">
+      <li><a href="#">Home</a></li>
+      <li><a href="#collections">Collections</a></li>
+    </ul>
+
+    <div class="logo">
+  <img src="images/logo.png" alt="Logo">
+  <h1>Style-it</h1>
+</div>
+
+
+    <ul class="nav-right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Cart 🛒</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Discover Your Style</h1>
+    <p>Explore our latest collections made just for you</p>
+    <a href="#collections" class="hero-btn">Shop Now</a>
+
+  </div>
+</section>
+
+<section id="collections" class="collections">
+  <h2>Our Collections</h2>
+
+  <div class="collection-grid">
+
+  <!-- MEN -->
+  <div class="card collection-card" onclick="openCollection(0)">
+    <img src="images/card-men.png" alt="Men Collection">
+    <div class="card-text">Men</div>
+  </div>
+
+  <!-- WOMEN -->
+  <div class="card collection-card" onclick="openCollection(1)">
+    <img src="images/card-women.png" alt="Women Collection">
+    <div class="card-text">Women</div>
+  </div>
+
+  <!-- T-SHIRTS -->
+  <div class="card collection-card" onclick="openCollection(2)">
+    <img src="images/pants.jpg" alt="pants collection">
+    <div class="card-text">pants</div>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+<section class="section-slider" id="product-slider">
+
+  <!-- LEFT BUTTON -->
+  <button class="nav-btn left" onclick="slideTo('prev')">❮</button>
+
+  <!-- SLIDER WINDOW -->
+  <div class="slider-window">
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- MEN -->
+      <div class="slide">
+        <h2>Men's Wear</h2>
+        <div class="grid-3x3">
+
+          <div class="product-card">
+  <img src="images/men1.jpeg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/men2.png" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/men3.png" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/men4.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/men5.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/men6.png" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+ 
+        </div>
+      </div>
+
+      <!-- WOMEN -->
+      <div class="slide">
+        <h2>Women's Wear</h2>
+        <div class="grid-3x3">
+         <div class="product-card">
+ <img src="images/women1.png" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/women2.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/women3.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/women4.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/women5.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/women6.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- T-SHIRTS -->
+      <div class="slide">
+        <h2>pants</h2>
+        <div class="grid-3x3">
+          <div class="product-card">
+ <img src="images/pant1.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/pant2.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/pant3.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+<div class="product-card">
+ <img src="images/pant4.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+<div class="product-card">
+ <img src="images/pant5.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>
+    <p>₹999</p>
+  </div>
+</div>
+
+ 
+
+<div class="product-card">
+ <img src="images/pant6.jpg" alt="Men Shirt">
+  <div class="product-info">
+    <h4>Casual Shirt</h4>     
+    <p>₹999</p>
+  </div>
+</div>
+
+  
+       
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT BUTTON -->
+  <button class="nav-btn right" onclick="slideTo('next')">❯</button>
+
+</section>
+<script>
+  let currentIndex = 0;
+  const track = document.getElementById("sliderTrack");
+  const totalSlides = document.querySelectorAll(".slide").length;
+
+  function slideTo(direction) {
+    if (direction === "next") {
+      currentIndex = (currentIndex + 1) % totalSlides;
+    } else {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    }
+    updateSlider();
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlider();
+  }
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // ⭐ Collection → Slider connection
+  function openCollection(index) {
+    currentIndex = index;
+    updateSlider();
+
+    document.getElementById("product-slider")
+      .scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+</body>
+</html>
